@@ -122,6 +122,9 @@ $messageHandler->setHandler(function ($message) {
                         case 'search':
                             $category = explode(' ', $message['message']);
                             $list = $conn->search($category);
+                            if ($list = []){
+                                Text::send($message['from']['UserName'], '@Auto:没有找到类似表情');
+                            }
                             foreach ($list as $emoticon){
                                 Emoticon::send($message['from']['UserName'], __DIR__.'/tmp/emoticons/'.$emoticon);
                             }
