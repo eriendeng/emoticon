@@ -90,7 +90,7 @@ trait Multimedia
         }
     }
 
-    protected static function fileName($message)
+    public static function fileName($message)
     {
         return $message['MsgId'].static::EXT;
     }

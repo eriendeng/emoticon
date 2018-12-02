@@ -10,6 +10,8 @@ use Hanson\Vbot\Foundation\Vbot;
 use Hanson\Vbot\Message\Emoticon;
 use Hanson\Vbot\Message\Text;
 
+use Hanson\Vbot\Message\Traits\Multimedia;
+
 require_once __DIR__.'/vendor/autoload.php';
 require_once 'mysql.php';
 $path = __DIR__.'/tmp/';
@@ -125,7 +127,7 @@ $messageHandler->setHandler(function ($message) {
     if ($message['type'] == 'emoticon'){
         if (isset($emotion_mode[$message['from']['UserName']])){
             Emoticon::download($message);
-            $emotion_mode[$message['from']['UserName']] = $message['FileName'].".gif";
+            $emotion_mode[$message['from']['UserName']] = Multimedia::fileName($message).".gif";
         }
     }
 });

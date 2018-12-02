@@ -84,7 +84,7 @@ class File extends Message implements MessageInterface
         ];
     }
 
-    protected static function fileName($message)
+    public static function fileName($message)
     {
         return $message['FileName'];
     }
