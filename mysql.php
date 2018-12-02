@@ -38,6 +38,7 @@ class Conn{
     
 
     public function insert($path, $author, $category = []){
+        $category = json_encode($category);
         return $this->conn->table('emoticon')->insert([
             'path' => $path,
             'author' => $author,

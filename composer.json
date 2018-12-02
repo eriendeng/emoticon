@@ -1,6 +1,7 @@
 {
     "require": {
         "hanson/vbot": "^2.0",
-      "ext-mysqli": "*"
+      "ext-mysqli": "*",
+      "ext-json": "*"
     }
 }
