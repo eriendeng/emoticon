@@ -126,6 +126,7 @@ $messageHandler->setHandler(function ($message) {
     if ($message['type'] == 'emoticon'){
         if (isset($emotion_mode[$message['from']['UserName']])){
             Text::send($message['from']['UserName'], $message['raw']);
+            echo $message['raw'];
 //            Emoticon::download($message);
 //            $emotion_mode[$message['from']['UserName']] = Multimedia::fileName($message).".gif";
         }
