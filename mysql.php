@@ -52,7 +52,7 @@ class Conn{
         foreach (DB::table('emoticon')->get() as $row){
             foreach ($category as $word){
                 $w = json_decode(utf8_encode($row->category));
-                echo $w;
+                print_r($w);
                 if (!in_array($word, $w)){
                     goto A;
                 }
