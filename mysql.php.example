@@ -8,22 +8,23 @@
 
 
 class Conn{
-    private $servername;
-    private $username;
-    private $password;
-    private $dbname;
+    private $servername = '127.0.0.1';
+    private $username = 'root';
+    private $password = 'Change19980101';
+    private $dbname = 'emoticon';
 
     private $conn;
-    
+
     public function __construct(){
-        $this->conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
+        $conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
     }
-    
+
 
     public function insert($path, $author, $category = []){
         $staff_json = json_encode($category);
-        $sql = "INSERT INTO emoticon (path, author, category, created_at, updated_at)VALUES ('$path', '$author', $staff_json, '".date('Y-m-d H:m:s')."', '".date('Y-m-d H:m:s')."')";
-        mysqli_query($this->conn, $sql);
+        $sql = "INSERT INTO emoticon (path, author, category)VALUE('$path', '$author', $staff_json)";
+        $result = $this->conn->query($sql);
+        return $result;
     }
 
     public function error(){
