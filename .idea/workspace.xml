@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="63231ea8-c089-4ce1-9c71-0c5026011749" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +87,7 @@
           <entry key="example" value="15" />
           <entry key="gitignore" value="42" />
           <entry key="json" value="46" />
-          <entry key="php" value="1790" />
+          <entry key="php" value="1791" />
           <entry key="sql" value="108" />
           <entry key="txt" value="25" />
         </counts>
@@ -94,7 +95,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="46" />
-          <entry key="PHP" value="1804" />
+          <entry key="PHP" value="1805" />
           <entry key="PLAIN_TEXT" value="67" />
           <entry key="SQL" value="36" />
           <entry key="Scratch" value="73" />
@@ -107,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1566">
+            <state relative-caret-position="2022">
               <caret line="117" column="28" lean-forward="true" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
               <folding>
                 <element signature="e#89#121#0#PHP" expanded="true" />
@@ -119,8 +120,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysql.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+            <state relative-caret-position="209">
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -272,7 +273,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543735366305</updated>
-      <workItem from="1543735367445" duration="16713000" />
+      <workItem from="1543735367445" duration="17061000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1543738998518</created>
@@ -285,7 +286,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16713000" />
+    <option name="totallyTimeSpent" value="17061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -547,7 +548,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
+        <state relative-caret-position="2022">
           <caret line="117" column="28" lean-forward="true" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
           <folding>
             <element signature="e#89#121#0#PHP" expanded="true" />
@@ -557,8 +558,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        <state relative-caret-position="209">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
         </state>
       </provider>
     </entry>
