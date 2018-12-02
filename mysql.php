@@ -46,6 +46,24 @@ class Conn{
         ]);
     }
 
+    public function search($category = []){
+        $list = [];
+        $data = [];
+        foreach (DB::table('emoticon')->get() as $row){
+            foreach ($category as $word){
+                if (!in_array($word, json_decode($row->category))){
+                    goto A;
+                }
+            }
+            $list[] = $row;
+            A:
+        }
+        foreach ($list as $emo){
+            $data[] = $emo->path;
+        }
+        return $data;
+    }
+
 }
 
 

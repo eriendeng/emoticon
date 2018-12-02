@@ -98,33 +98,49 @@ $messageHandler->setHandler(function ($message) {
         switch ($message['message']){
             case '#保存表情':
                 if (!isset($emotion_mode[$message['from']['UserName']])){
-                    $emotion_mode[$message['from']['UserName']] = "init";
+                    $emotion_mode[$message['from']['UserName']] = "save";
                     Text::send($message['from']['UserName'], '@Auto:开始保存表情');
                 }else{
-                    Text::send($message['from']['UserName'], '@Auto:请先退出保存模式');
+                    Text::send($message['from']['UserName'], '@Auto:请先退出其他模式');
+                }
+                break;
+            case '#搜索表情':
+                if (!isset($emotion_mode[$message['from']['UserName']])){
+                    $emotion_mode[$message['from']['UserName']] = "search";
+                    Text::send($message['from']['UserName'], '@Auto:开始搜索表情');
+                }else{
+                    Text::send($message['from']['UserName'], '@Auto:请先退出其他模式');
                 }
                 break;
             case '#结束':
                 unset($emotion_mode[$message['from']['UserName']]);
-                Text::send($message['from']['UserName'], '@Auto:结束保存');
+                Text::send($message['from']['UserName'], '@Auto:结束所有模式');
                 break;
             default:
-                if (isset($emotion_mode[$message['from']['UserName']]) && $emotion_mode[$message['from']['UserName']] != 'init'){
+                if (isset($emotion_mode[$message['from']['UserName']]) && $emotion_mode[$message['from']['UserName']] != 'save'){
                     $category = explode(' ', $message['message']);
                     $result = $conn->insert($emotion_mode[$message['from']['UserName']], $message['from']['NickName'], $category);
-                    $emotion_mode[$message['from']['UserName']] = 'init';
+                    $emotion_mode[$message['from']['UserName']] = 'save';
                     if ($result == true) {
                         Text::send($message['from']['UserName'], '@Auto:成功保存一个表情');
                     } else {
-                        Text::send($message['from']['UserName'], '@Auto:该表情保存保存失败，请重试。'.$conn->error());
+                        Text::send($message['from']['UserName'], '@Auto:该表情保存保存失败，请重试。');
                     }
+                    break;
                 }
-                break;
+                if (isset($emotion_mode[$message['from']['UserName']]) && $emotion_mode[$message['from']['UserName']] != 'search'){
+                    $category = explode(' ', $message['message']);
+                    $list = $conn->search($category);
+                    foreach ($list as $emoticon){
+                        Emoticon::send($message['from']['UserName'], __DIR__.'/tmp/emoticons/'.$emoticon);
+                    }
+                    break;
+                }
         }
     }
 
     if ($message['type'] == 'emoticon'){
-        if (isset($emotion_mode[$message['from']['UserName']])){
+        if (isset($emotion_mode[$message['from']['UserName']]) && $emotion_mode[$message['from']['UserName']] == 'save'){
 //            Text::send($message['from']['UserName'], $message['raw']);
 //            Emoticon::download($message);
             $emotion_mode[$message['from']['UserName']] = $message['raw']['NewMsgId'].".gif";

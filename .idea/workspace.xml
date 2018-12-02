@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63231ea8-c089-4ce1-9c71-0c5026011749" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9518a0a2-83ad-4b91-86c0-d2dfb75effac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9518a0a2-83ad-4b91-86c0-d2dfb75effac.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.php" beforeDir="false" afterPath="$PROJECT_DIR$/run.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,9 +67,9 @@
           <entry key="f00f4bffa1dd614128561a89855ca74287544939" value="1" />
           <entry key="gitignore" value="10" />
           <entry key="jpg" value="1" />
-          <entry key="json" value="5" />
+          <entry key="json" value="6" />
           <entry key="php" value="57" />
-          <entry key="sql" value="2" />
+          <entry key="sql" value="3" />
           <entry key="vbot" value="1" />
         </counts>
       </usages-collector>
@@ -76,10 +77,10 @@
         <counts>
           <entry key="Database Element" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="5" />
+          <entry key="JSON" value="6" />
           <entry key="PHP" value="64" />
           <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Scratch" value="2" />
+          <entry key="Scratch" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -87,50 +88,33 @@
           <entry key="example" value="15" />
           <entry key="gitignore" value="42" />
           <entry key="json" value="47" />
-          <entry key="php" value="1791" />
-          <entry key="sql" value="108" />
+          <entry key="php" value="2131" />
+          <entry key="sql" value="142" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="47" />
-          <entry key="PHP" value="1805" />
+          <entry key="PHP" value="2145" />
           <entry key="PLAIN_TEXT" value="67" />
           <entry key="SQL" value="36" />
-          <entry key="Scratch" value="73" />
+          <entry key="Scratch" value="107" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2022">
-              <caret line="117" column="28" lean-forward="true" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
+            <state relative-caret-position="136">
+              <caret line="134" column="24" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
               <folding>
                 <element signature="e#89#121#0#PHP" expanded="true" />
+                <element signature="e#338#1839#0#PHP" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysql.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -140,9 +124,15 @@
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
-              <column-attributes>
-                <column name="category" languageId="JSON" />
-              </column-attributes>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9518a0a2-83ad-4b91-86c0-d2dfb75effac/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="45" selection-start-column="45" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -153,6 +143,7 @@
     <findStrings>
       <find>@75b3cda9c3074694c3799a3e0a1f10ff</find>
       <find>error</find>
+      <find>init</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,11 +158,11 @@
         <option value="$PROJECT_DIR$/vendor/.gitignore" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Message/File.php" />
         <option value="$PROJECT_DIR$/vendor/hanson/vbot/src/Message/Traits/Multimedia.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9518a0a2-83ad-4b91-86c0-d2dfb75effac/console.sql" />
         <option value="$PROJECT_DIR$/mysql.php.example" />
-        <option value="$PROJECT_DIR$/run.php" />
-        <option value="$PROJECT_DIR$/mysql.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9518a0a2-83ad-4b91-86c0-d2dfb75effac/console.sql" />
+        <option value="$PROJECT_DIR$/mysql.php" />
+        <option value="$PROJECT_DIR$/run.php" />
       </list>
     </option>
   </component>
@@ -240,7 +231,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -273,7 +264,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543735366305</updated>
-      <workItem from="1543735367445" duration="17543000" />
+      <workItem from="1543735367445" duration="19318000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1543738998518</created>
@@ -286,21 +277,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17543000" />
+    <option name="totallyTimeSpent" value="19318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17962466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17962466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49932975" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49932975" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50067025" side_tool="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Database Console" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Console" sideWeight="0.49932975" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -491,13 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9518a0a2-83ad-4b91-86c0-d2dfb75effac/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="93" selection-start-column="93" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Medoo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -529,37 +514,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9518a0a2-83ad-4b91-86c0-d2dfb75effac/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="45" selection-start-column="45" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://9518a0a2-83ad-4b91-86c0-d2dfb75effac/schema/emoticon/table/emoticon">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-          <column-attributes>
-            <column name="category" languageId="JSON" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2022">
-          <caret line="117" column="28" lean-forward="true" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
-          <folding>
-            <element signature="e#89#121#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        <state relative-caret-position="345">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/run.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="136">
+          <caret line="134" column="24" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
+          <folding>
+            <element signature="e#89#121#0#PHP" expanded="true" />
+            <element signature="e#338#1839#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
