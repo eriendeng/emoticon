@@ -167,7 +167,16 @@ $messageHandler->setHandler(function ($message) {
     }
 });
 
-$vb->server->serve();
+pcntl_signal(SIGHUP, function(){
+    //  这地方处理信号的方式我们只是简单的写入一句日志到文件中
+    file_put_contents('logs.txt', 'pid : ' . posix_getpid() . ' receive SIGHUP 信号' . PHP_EOL);
+});
 
+
+$vb->server->serve();
+while (true){
+    pcntl_signal_dispatch();
+    sleep(1);
+}
 
 ?>
