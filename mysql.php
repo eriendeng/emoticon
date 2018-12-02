@@ -1,5 +1,7 @@
 <?php
 
+use Medoo\Medoo;
+
 
 /**
  * Created by PhpStorm.
