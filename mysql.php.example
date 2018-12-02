@@ -16,7 +16,7 @@ class Conn{
     private $conn;
     
     public function __construct(){
-        $this->conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
+        $this->conn = mysqli_connect($this->servername, $this->username, $this->password, $this->dbname);
     }
     
 
