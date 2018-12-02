@@ -101,7 +101,7 @@ $messageHandler->setHandler(function ($message) {
                     $emotion_mode[$message['from']['UserName']] = "init";
                     Text::send($message['from']['UserName'], '@Auto:开始保存表情');
                 }else{
-                    Text::send($message['from']['UserName'], '@Auto:请先保存模式');
+                    Text::send($message['from']['UserName'], '@Auto:请先退出保存模式');
                 }
                 break;
             case '#结束':
