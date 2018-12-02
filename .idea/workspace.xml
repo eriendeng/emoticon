@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63231ea8-c089-4ce1-9c71-0c5026011749" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mysql.php.example" beforeDir="false" afterPath="$PROJECT_DIR$/mysql.php.example" afterDir="false" />
-    </list>
+    <list default="true" id="63231ea8-c089-4ce1-9c71-0c5026011749" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,15 +63,16 @@
           <entry key="gitignore" value="8" />
           <entry key="jpg" value="1" />
           <entry key="json" value="3" />
-          <entry key="php" value="11" />
+          <entry key="php" value="12" />
           <entry key="sql" value="1" />
+          <entry key="vbot" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
           <entry key="JSON" value="3" />
-          <entry key="PHP" value="13" />
+          <entry key="PHP" value="15" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -118,8 +117,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysql.php.example">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="247">
+              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -209,6 +208,49 @@
               <item name="uploademotion" type="462c0819:PsiDirectoryNode" />
               <item name="tmp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="uploademotion" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uploademotion" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uploademotion" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uploademotion" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="hanson" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uploademotion" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uploademotion" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="hanson" type="462c0819:PsiDirectoryNode" />
+              <item name="vbot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uploademotion" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uploademotion" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="hanson" type="462c0819:PsiDirectoryNode" />
+              <item name="vbot" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uploademotion" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uploademotion" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="hanson" type="462c0819:PsiDirectoryNode" />
+              <item name="vbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uploademotion" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uploademotion" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="hanson" type="462c0819:PsiDirectoryNode" />
+              <item name="vbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Foundation" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -248,7 +290,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543735366305</updated>
-      <workItem from="1543735367445" duration="6555000" />
+      <workItem from="1543735367445" duration="7123000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1543738998518</created>
@@ -261,20 +303,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6555000" />
+    <option name="totallyTimeSpent" value="7123000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17962466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17962466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -389,10 +431,16 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9518a0a2-83ad-4b91-86c0-d2dfb75effac/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/bin/vbot">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Foundation/ServiceProviderInterface.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysql.php.example">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="247">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
         </state>
       </provider>
     </entry>

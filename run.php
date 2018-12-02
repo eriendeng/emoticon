@@ -54,7 +54,7 @@ $options = [
      * 缓存配置项
      */
     'cache' => [
-        'default' => 'redis', // 缓存设置 （支持 redis 或 file）
+        'default' => 'file', // 缓存设置 （支持 redis 或 file）
         'stores'  => [
             'file' => [
                 'driver' => 'file',
