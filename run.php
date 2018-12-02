@@ -100,13 +100,12 @@ $messageHandler->setHandler(function ($message) {
                     $emotion_mode = true;
                     Text::send('@75b3cda9c3074694c3799a3e0a1f10ff', '开始保存表情');
                 }else{
-                    $$deny = Text::send('@75b3cda9c3074694c3799a3e0a1f10ff', '请先结束其他模式');
-
+                    Text::send('@75b3cda9c3074694c3799a3e0a1f10ff', '请先结束其他模式');
                 }
                 break;
             case '#结束':
                 $emotion_mode = false;
-                $end = Text::send('@75b3cda9c3074694c3799a3e0a1f10ff', '成功结束其他模式');
+                Text::send('@75b3cda9c3074694c3799a3e0a1f10ff', '成功结束其他模式');
                 break;
 
 
