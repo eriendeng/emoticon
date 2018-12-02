@@ -38,7 +38,7 @@ class Conn{
     
 
     public function insert($path, $author, $category = []){
-        $category = utf8_encode(json_encode($category));
+        $category = json_encode($category);
         return $this->conn->table('emoticon')->insert([
             'path' => $path,
             'author' => $author,
@@ -51,7 +51,7 @@ class Conn{
         $data = [];
         foreach (DB::table('emoticon')->get() as $row){
             foreach ($category as $word){
-                if (!in_array($word, json_decode($row->category))){
+                if (!in_array($word, json_decode(utf8_encode($row->category)))){
                     goto A;
                 }
             }

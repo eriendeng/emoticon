@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63231ea8-c089-4ce1-9c71-0c5026011749" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql.php" afterDir="false" />
-    </list>
+    <list default="true" id="63231ea8-c089-4ce1-9c71-0c5026011749" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +84,7 @@
           <entry key="example" value="15" />
           <entry key="gitignore" value="42" />
           <entry key="json" value="47" />
-          <entry key="php" value="2202" />
+          <entry key="php" value="2207" />
           <entry key="sql" value="142" />
           <entry key="txt" value="25" />
         </counts>
@@ -94,7 +92,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="47" />
-          <entry key="PHP" value="2216" />
+          <entry key="PHP" value="2221" />
           <entry key="PLAIN_TEXT" value="67" />
           <entry key="SQL" value="36" />
           <entry key="Scratch" value="107" />
@@ -117,16 +115,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysql.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+            <state relative-caret-position="193">
+              <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="das://9518a0a2-83ad-4b91-86c0-d2dfb75effac/schema/emoticon/table/emoticon">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -139,7 +137,7 @@
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9518a0a2-83ad-4b91-86c0-d2dfb75effac/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="45" selection-start-column="45" selection-end-column="45" />
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -271,7 +269,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543735366305</updated>
-      <workItem from="1543735367445" duration="20003000" />
+      <workItem from="1543735367445" duration="20250000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1543738998518</created>
@@ -284,7 +282,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20003000" />
+    <option name="totallyTimeSpent" value="20250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -297,7 +295,7 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49932975" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49932975" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50067025" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Console" sideWeight="0.49932975" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -307,7 +305,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" visible="true" weight="0.19839142" />
+      <window_info active="true" anchor="right" id="Database" visible="true" weight="0.19839142" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -528,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9518a0a2-83ad-4b91-86c0-d2dfb75effac/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="45" selection-start-column="45" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -543,13 +534,6 @@
             <element signature="e#89#121#0#PHP" expanded="true" />
             <element signature="e#338#1839#0#PHP" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9518a0a2-83ad-4b91-86c0-d2dfb75effac/schema/emoticon/table/emoticon">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -562,8 +546,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+        <state relative-caret-position="193">
+          <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9518a0a2-83ad-4b91-86c0-d2dfb75effac/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9518a0a2-83ad-4b91-86c0-d2dfb75effac/schema/emoticon/table/emoticon">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
