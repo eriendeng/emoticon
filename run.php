@@ -113,7 +113,7 @@ $messageHandler->setHandler(function ($message) {
                     $category = explode(' ', $message['message']);
                     $result = $conn->insert($emotion_mode[$message['from']['UserName']], $message['from']['NickName'], $category);
                     $emotion_mode[$message['from']['UserName']] = 'init';
-                    if ($result === TRUE) {
+                    if ($result == true) {
                         Text::send($message['from']['UserName'], '@Auto:成功保存一个表情');
                     } else {
                         Text::send($message['from']['UserName'], '@Auto:该表情保存保存失败，请重试。'.$conn->error());

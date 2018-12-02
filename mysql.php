@@ -1,6 +1,9 @@
 <?php
 
-use Medoo\Medoo;
+
+
+use Illuminate\Container\Container;
+use Illuminate\Database\Capsule\Manager as DB;
 
 
 /**
@@ -14,30 +17,34 @@ use Medoo\Medoo;
 class Conn{
 
     private $conn;
+    private $database = [
+        'driver'    => 'mysql',
+        'host'      => 'localhost',
+        'database'  => 'emoticon',
+        'username'  => 'root',
+        'password'  => 'Change19980101!',
+        'charset'   => 'utf8',
+        'collation' => 'utf8_unicode_ci',
+        'prefix'    => '',
+    ];
     
     public function __construct(){
-        $this->conn = new medoo([
-            'database_type' => 'mysql',
-            'database_name' => 'emoticon',
-            'server' => 'localhost',
-            'username' => 'root',
-            'password' => 'Change19980101!',
-            'charset' => 'utf8'
-        ]);
+        $this->conn = new DB();
+        $this->conn->addConnection($this->database);
+        $this->conn->setAsGlobal();
+        $this->conn->bootEloquent();
+
     }
     
 
     public function insert($path, $author, $category = []){
-        $this->conn->insert('emoticon', [
+        return $this->conn->table('emoticon')->insert([
             'path' => $path,
             'author' => $author,
-            'category' => $category
+            'category' => $category,
         ]);
     }
 
-    public function error(){
-        return $this->conn->error();
-    }
 }
 
 
