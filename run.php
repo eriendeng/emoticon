@@ -111,6 +111,7 @@ $messageHandler->setHandler(function ($message) {
                     $category = explode(' ', $message['message']);
                     $conn->insert($emotion_mode[$message['from']['UserName']], $message['from']['NickName'], $category);
                     $emotion_mode[$message['from']['UserName']] = 'init';
+                    Text::send($message['from']['UserName'], '@Auto:成功保存一个表情');
                 }
                 break;
         }
