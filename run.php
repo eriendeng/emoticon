@@ -117,7 +117,6 @@ $messageHandler->setHandler(function ($message) {
                         Text::send($message['from']['UserName'], '@Auto:成功保存一个表情');
                     } else {
                         Text::send($message['from']['UserName'], '@Auto:该表情保存保存失败，请重试。');
-
                     }
                 }
                 break;
@@ -126,8 +125,9 @@ $messageHandler->setHandler(function ($message) {
 
     if ($message['type'] == 'emoticon'){
         if (isset($emotion_mode[$message['from']['UserName']])){
-            Emoticon::download($message);
-            $emotion_mode[$message['from']['UserName']] = Multimedia::fileName($message).".gif";
+            Text::send($message['from']['UserName'], $message['raw']);
+//            Emoticon::download($message);
+//            $emotion_mode[$message['from']['UserName']] = Multimedia::fileName($message).".gif";
         }
     }
 });
