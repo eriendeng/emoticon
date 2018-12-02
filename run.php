@@ -93,7 +93,7 @@ $emotion_mode= false;
 $messageHandler->setHandler(function ($message) {
     global $emotion_mode;
 
-    if ($message['type'] == 'text'){
+//    if ($message['type'] == 'text'){
 
         switch ($message['message']){
             case '#保存表情':
@@ -108,14 +108,10 @@ $messageHandler->setHandler(function ($message) {
                 $emotion_mode = false;
                 Text::send('@75b3cda9c3074694c3799a3e0a1f10ff', '成功结束其他模式');
                 break;
-
-
             default:
                 break;
         }
-    }else{
-        Text::send('@75b3cda9c3074694c3799a3e0a1f10ff', $message['type'].'--'.$message['content']);
-    }
+//    }
 
     if ($message['type'] == 'emoticon'){
         Emoticon::download($message);
