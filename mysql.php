@@ -24,7 +24,7 @@ class Conn{
         'username'  => 'root',
         'password'  => 'Change19980101!',
         'charset'   => 'utf8',
-        'collation' => 'utf8_unicode_ci',
+        'collation' => 'utf8',
         'prefix'    => '',
     ];
     
