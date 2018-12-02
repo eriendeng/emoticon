@@ -84,7 +84,8 @@ $mysql = new Conn();
 $messageHandler = $vb->messageHandler;
 //
 
-$emotion_mode = false;
+global $emotion_mode;
+$emotion_mode= false;
 
 
 //
