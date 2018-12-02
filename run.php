@@ -153,8 +153,11 @@ $messageHandler->setHandler(function ($message) {
     if ($message['type'] == 'emoticon'){
         if (isset($emotion_mode[$message['from']['UserName']]) && $emotion_mode[$message['from']['UserName']] == 'save'){
 //            Text::send($message['from']['UserName'], $message['raw']);
-//            Emoticon::download($message);
-            $emotion_mode[$message['from']['UserName']] = $message['raw']['NewMsgId'].".gif";
+            Emoticon::download($message, function ($resource) {
+                global $message;
+                file_put_contents(__DIR__.'/tmp/emoticons/'.$message['raw']['NewMsgId'].'_.gif', $resource);
+            });
+            $emotion_mode[$message['from']['UserName']] = $message['raw']['NewMsgId']."_.gif";
         }
     }
 });
