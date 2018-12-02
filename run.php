@@ -80,43 +80,51 @@ $options = [
     ],
 ];
 $vb = new Vbot($options);
-$mysql = new Conn();
+$conn = new Conn();
 $messageHandler = $vb->messageHandler;
 //
 
-global $emotion_mode;
-$emotion_mode= false;
+$emotion_mode= [];
 
 
 //
 
 $messageHandler->setHandler(function ($message) {
+    if ($message['fromType'] == 'Group') return;
     global $emotion_mode, $conn;
-
     if ($message['type'] == 'text'){
-
         switch ($message['message']){
             case '#保存表情':
-                if ($emotion_mode == false){
-                    $emotion_mode = true;
-                    Text::send('filehelper', '开始保存表情');
+                if (!isset($emotion_mode[$message['from']['UserName']])){
+                    $emotion_mode[$message['from']['UserName']] = "init";
+                    Text::send($message['from']['UserName'], '@Auto:开始保存表情');
                 }else{
-                    Text::send('filehelper', '请先结束其他模式');
+                    Text::send($message['from']['UserName'], '@Auto:请先保存模式');
                 }
                 break;
             case '#结束':
-                $emotion_mode = false;
-                Text::send('filehelper', '成功结束其他模式');
+                unset($emotion_mode[$message['from']['UserName']]);
+                Text::send($message['from']['UserName'], '@Auto:结束保存');
                 break;
             default:
+                if (isset($emotion_mode[$message['from']['UserName']]) && $emotion_mode[$message['from']['UserName']] != 'init'){
+                    $category = explode(' ', $message['message']);
+                    $conn->insert($emotion_mode[$message['from']['UserName']], $message['from']['NickName'], $category);
+                    $emotion_mode[$message['from']['UserName']] = 'init';
+                }
                 break;
         }
     }
 
     if ($message['type'] == 'emoticon'){
-        Emoticon::download($message, function ($resource) {
-            file_put_contents(__DIR__.'/tmp/emoticons/'.time().'.gif', $resource);
-        });
+        if (isset($emotion_mode[$message['from']['UserName']])){
+            Emoticon::download($message, function ($resource) {
+                global $emotion_mode, $message;
+                $time = time();
+                file_put_contents(__DIR__.'/tmp/emoticons/'.$time.'.gif', $resource);
+                $emotion_mode[$message['from']['UserName']] = $time.".gif";
+            });
+        }
     }
 });
 
