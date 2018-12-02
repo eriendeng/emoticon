@@ -126,7 +126,7 @@ $messageHandler->setHandler(function ($message) {
                                 Text::send($message['from']['UserName'], '@Auto:没有找到类似表情');
                             }
                             foreach ($list as $emoticon){
-                                print_r($emoticon);
+                                print_r(__DIR__.'/tmp/emoticons/'.$emoticon);
                                 Emoticon::send($message['from']['UserName'], __DIR__.'/tmp/emoticons/'.$emoticon);
                             }
                             break;
