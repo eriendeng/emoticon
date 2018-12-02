@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63231ea8-c089-4ce1-9c71-0c5026011749" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.php" beforeDir="false" afterPath="$PROJECT_DIR$/run.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +66,7 @@
           <entry key="gitignore" value="10" />
           <entry key="jpg" value="1" />
           <entry key="json" value="6" />
-          <entry key="php" value="57" />
+          <entry key="php" value="59" />
           <entry key="sql" value="3" />
           <entry key="vbot" value="1" />
         </counts>
@@ -77,7 +76,7 @@
           <entry key="Database Element" value="2" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="6" />
-          <entry key="PHP" value="64" />
+          <entry key="PHP" value="66" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="Scratch" value="3" />
         </counts>
@@ -87,7 +86,7 @@
           <entry key="example" value="15" />
           <entry key="gitignore" value="42" />
           <entry key="json" value="47" />
-          <entry key="php" value="2193" />
+          <entry key="php" value="2202" />
           <entry key="sql" value="142" />
           <entry key="txt" value="25" />
         </counts>
@@ -95,7 +94,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="47" />
-          <entry key="PHP" value="2207" />
+          <entry key="PHP" value="2216" />
           <entry key="PLAIN_TEXT" value="67" />
           <entry key="SQL" value="36" />
           <entry key="Scratch" value="107" />
@@ -105,7 +104,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
@@ -114,6 +113,15 @@
                 <element signature="e#89#121#0#PHP" expanded="true" />
                 <element signature="e#338#1839#0#PHP" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysql.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -160,8 +168,8 @@
         <option value="$PROJECT_DIR$/mysql.php.example" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9518a0a2-83ad-4b91-86c0-d2dfb75effac/console.sql" />
-        <option value="$PROJECT_DIR$/mysql.php" />
         <option value="$PROJECT_DIR$/run.php" />
+        <option value="$PROJECT_DIR$/mysql.php" />
       </list>
     </option>
   </component>
@@ -263,7 +271,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543735366305</updated>
-      <workItem from="1543735367445" duration="19704000" />
+      <workItem from="1543735367445" duration="20003000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1543738998518</created>
@@ -276,10 +284,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19704000" />
+    <option name="totallyTimeSpent" value="20003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17962466" />
@@ -519,20 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9518a0a2-83ad-4b91-86c0-d2dfb75effac/schema/emoticon/table/emoticon">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9518a0a2-83ad-4b91-86c0-d2dfb75effac/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -548,6 +543,27 @@
             <element signature="e#89#121#0#PHP" expanded="true" />
             <element signature="e#338#1839#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9518a0a2-83ad-4b91-86c0-d2dfb75effac/schema/emoticon/table/emoticon">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="1114" column="9" selection-start-line="1114" selection-start-column="9" selection-end-line="1114" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
         </state>
       </provider>
     </entry>
