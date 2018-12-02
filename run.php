@@ -91,30 +91,32 @@ $emotion_mode= false;
 //
 
 $messageHandler->setHandler(function ($message) {
-    global $emotion_mode;
+    global $emotion_mode, $conn;
 
-//    if ($message['type'] == 'text'){
+    if ($message['type'] == 'text'){
 
         switch ($message['message']){
             case '#保存表情':
                 if ($emotion_mode == false){
                     $emotion_mode = true;
-                    Text::send('@75b3cda9c3074694c3799a3e0a1f10ff', '开始保存表情');
+                    Text::send('filehelper', '开始保存表情');
                 }else{
-                    Text::send('@75b3cda9c3074694c3799a3e0a1f10ff', '请先结束其他模式');
+                    Text::send('filehelper', '请先结束其他模式');
                 }
                 break;
             case '#结束':
                 $emotion_mode = false;
-                Text::send('@75b3cda9c3074694c3799a3e0a1f10ff', '成功结束其他模式');
+                Text::send('filehelper', '成功结束其他模式');
                 break;
             default:
                 break;
         }
-//    }
+    }
 
     if ($message['type'] == 'emoticon'){
-        Emoticon::download($message);
+        Emoticon::download($message, function ($resource) {
+            file_put_contents(__DIR__.'/tmp/emoticons/'.time().'.gif', $resource);
+        });
     }
 });
 
