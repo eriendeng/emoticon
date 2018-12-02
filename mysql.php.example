@@ -25,6 +25,10 @@ class Conn{
         $sql = "INSERT INTO emoticon (path, author, category, created_at, updated_at)VALUES ('$path', '$author', $staff_json, '".date('Y-m-d H:m:s')."', '".date('Y-m-d H:m:s')."')";
         mysqli_query($this->conn, $sql);
     }
+
+    public function error(){
+        return $this->conn->error;
+    }
 }
 
 

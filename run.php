@@ -116,7 +116,7 @@ $messageHandler->setHandler(function ($message) {
                     if ($result === TRUE) {
                         Text::send($message['from']['UserName'], '@Auto:成功保存一个表情');
                     } else {
-                        Text::send($message['from']['UserName'], '@Auto:该表情保存保存失败，请重试。');
+                        Text::send($message['from']['UserName'], '@Auto:该表情保存保存失败，请重试。'.$conn->error());
                     }
                 }
                 break;
