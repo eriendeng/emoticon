@@ -29,6 +29,7 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/vendor/hanson/vbot" />
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/Medoo-1.6/src" />
     </include_path>
   </component>
 </project>

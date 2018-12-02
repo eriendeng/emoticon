@@ -1,6 +1,5 @@
 <?php
 
-require_once "Medoo.php";
 
 /**
  * Created by PhpStorm.
