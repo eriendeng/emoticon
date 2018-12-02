@@ -10,7 +10,7 @@
 class Conn{
     private $servername = '127.0.0.1';
     private $username = 'root';
-    private $password = 'Change19980101';
+    private $password = 'Change19980101!';
     private $dbname = 'emoticon';
 
     private $conn;
