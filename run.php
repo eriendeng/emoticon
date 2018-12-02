@@ -109,9 +109,14 @@ $messageHandler->setHandler(function ($message) {
             default:
                 if (isset($emotion_mode[$message['from']['UserName']]) && $emotion_mode[$message['from']['UserName']] != 'init'){
                     $category = explode(' ', $message['message']);
-                    $conn->insert($emotion_mode[$message['from']['UserName']], $message['from']['NickName'], $category);
+                    $result = $conn->insert($emotion_mode[$message['from']['UserName']], $message['from']['NickName'], $category);
                     $emotion_mode[$message['from']['UserName']] = 'init';
-                    Text::send($message['from']['UserName'], '@Auto:成功保存一个表情');
+                    if ($result === TRUE) {
+                        Text::send($message['from']['UserName'], '@Auto:成功保存一个表情');
+                    } else {
+                        Text::send($message['from']['UserName'], '@Auto:该表情保存保存失败，请重试。');
+
+                    }
                 }
                 break;
         }
@@ -119,12 +124,8 @@ $messageHandler->setHandler(function ($message) {
 
     if ($message['type'] == 'emoticon'){
         if (isset($emotion_mode[$message['from']['UserName']])){
-            Emoticon::download($message, function ($resource) {
-                global $emotion_mode, $message;
-                $time = time();
-                file_put_contents(__DIR__.'/tmp/emoticons/'.$time.'.gif', $resource);
-                $emotion_mode[$message['from']['UserName']] = $time.".gif";
-            });
+            Emoticon::download($message);
+            $emotion_mode[$message['from']['UserName']] = $message['MsgId'].".gif";
         }
     }
 });
