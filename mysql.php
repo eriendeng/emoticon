@@ -22,7 +22,7 @@ class Conn{
         'host'      => 'localhost',
         'database'  => 'emoticon',
         'username'  => 'root',
-        'password'  => 'Change19980101',
+        'password'  => 'Change19980101!',
         'charset'   => 'utf8',
         'collation' => 'utf8_unicode_ci',
         'prefix'    => '',
