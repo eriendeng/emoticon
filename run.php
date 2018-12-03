@@ -174,9 +174,4 @@ pcntl_signal(SIGHUP, function(){
 
 
 $vb->server->serve();
-while (true){
-    pcntl_signal_dispatch();
-    sleep(1);
-}
-
 ?>
