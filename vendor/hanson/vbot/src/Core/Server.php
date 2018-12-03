@@ -122,7 +122,7 @@ class Server
     public function showQrCode()
     {
         $url = 'https://login.weixin.qq.com/l/'.$this->vbot->config['server.uuid'];
-        echo $url;
+        $this->vbot->console->log($url);
 
         $this->vbot->qrCodeObserver->trigger($url);
 
