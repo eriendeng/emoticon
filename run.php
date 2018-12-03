@@ -87,34 +87,52 @@ $messageHandler = $vb->messageHandler;
 //
 
 $emotion_mode= [];
+$pause = false;
 
 
 //
 
 $messageHandler->setHandler(function ($message) {
+    global $emotion_mode, $conn, $pause;
+
     if ($message['fromType'] == 'Group') return;
-    global $emotion_mode, $conn;
+    if ($message['from']['UserName'] == 'filehelper' && $message['type'] == 'text' && $message['message'] == '#暂停'){
+        switch ($pause){
+            case true:
+                $pause = false;
+                Text::send('filehelper', '@维尼在线服务:恢复使用');
+                break;
+            case false:
+                $pause = true;
+                Text::send('filehelper', '@维尼在线服务:暂停使用');
+                break;
+            default:
+                break;
+        }
+    }
+    if ($pause == true) return;
+
     if ($message['type'] == 'text'){
         switch ($message['message']){
             case '#保存表情':
                 if (!isset($emotion_mode[$message['from']['UserName']])){
                     $emotion_mode[$message['from']['UserName']] = "save";
-                    Text::send($message['from']['UserName'], '@Auto:开始保存表情');
+                    Text::send($message['from']['UserName'], '@维尼在线服务:开始保存表情');
                 }else{
-                    Text::send($message['from']['UserName'], '@Auto:请先退出其他模式');
+                    Text::send($message['from']['UserName'], '@维尼在线服务:请先退出其他模式');
                 }
                 break;
             case '#搜索表情':
                 if (!isset($emotion_mode[$message['from']['UserName']])){
                     $emotion_mode[$message['from']['UserName']] = "search";
-                    Text::send($message['from']['UserName'], '@Auto:开始搜索表情');
+                    Text::send($message['from']['UserName'], '@维尼在线服务:开始搜索表情');
                 }else{
-                    Text::send($message['from']['UserName'], '@Auto:请先退出其他模式');
+                    Text::send($message['from']['UserName'], '@维尼在线服务:请先退出其他模式');
                 }
                 break;
             case '#结束':
                 unset($emotion_mode[$message['from']['UserName']]);
-                Text::send($message['from']['UserName'], '@Auto:结束所有模式');
+                Text::send($message['from']['UserName'], '@维尼在线服务:结束所有模式');
                 break;
             default:
                 if (isset($emotion_mode[$message['from']['UserName']])){
@@ -123,7 +141,7 @@ $messageHandler->setHandler(function ($message) {
                             $category = explode(' ', $message['message']);
                             $list = $conn->search($category);
                             if ($list == []){
-                                Text::send($message['from']['UserName'], '@Auto:没有找到类似表情');
+                                Text::send($message['from']['UserName'], '@维尼在线服务:没有找到类似表情');
                             }
                             foreach ($list as $emoticon){
                                 print_r(__DIR__.'/tmp/emoticons/static/'.$emoticon."\n");
@@ -140,9 +158,9 @@ $messageHandler->setHandler(function ($message) {
                             $result = $conn->insert($emotion_mode[$message['from']['UserName']], $message['from']['NickName'], $category);
                             $emotion_mode[$message['from']['UserName']] = 'save';
                             if ($result == true) {
-                                Text::send($message['from']['UserName'], '@Auto:成功保存一个表情');
+                                Text::send($message['from']['UserName'], '@维尼在线服务:成功保存一个表情');
                             } else {
-                                Text::send($message['from']['UserName'], '@Auto:该表情保存保存失败，请重试。');
+                                Text::send($message['from']['UserName'], '@维尼在线服务:该表情保存保存失败，请重试。');
                             }
                             break;
                     }
@@ -166,12 +184,6 @@ $messageHandler->setHandler(function ($message) {
         }
     }
 });
-
-pcntl_signal(SIGHUP, function(){
-    //  这地方处理信号的方式我们只是简单的写入一句日志到文件中
-    file_put_contents('logs.txt', 'pid : ' . posix_getpid() . ' receive SIGHUP 信号' . PHP_EOL);
-});
-
 
 $vb->server->serve();
 ?>
