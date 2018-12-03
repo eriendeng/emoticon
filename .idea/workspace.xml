@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="63231ea8-c089-4ce1-9c71-0c5026011749" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.php" beforeDir="false" afterPath="$PROJECT_DIR$/run.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +69,7 @@
           <entry key="gitignore" value="10" />
           <entry key="jpg" value="1" />
           <entry key="json" value="8" />
-          <entry key="php" value="67" />
+          <entry key="php" value="69" />
           <entry key="sql" value="3" />
           <entry key="vbot" value="1" />
         </counts>
@@ -81,7 +79,7 @@
           <entry key="Database Element" value="3" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="8" />
-          <entry key="PHP" value="74" />
+          <entry key="PHP" value="76" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="Scratch" value="3" />
         </counts>
@@ -91,7 +89,7 @@
           <entry key="example" value="15" />
           <entry key="gitignore" value="42" />
           <entry key="json" value="47" />
-          <entry key="php" value="2419" />
+          <entry key="php" value="2424" />
           <entry key="sql" value="142" />
           <entry key="txt" value="25" />
         </counts>
@@ -99,7 +97,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="47" />
-          <entry key="PHP" value="2433" />
+          <entry key="PHP" value="2438" />
           <entry key="PLAIN_TEXT" value="67" />
           <entry key="SQL" value="36" />
           <entry key="Scratch" value="107" />
@@ -122,11 +120,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+            <state relative-caret-position="197">
+              <caret line="127" column="32" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Console/QrCode.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -207,7 +214,7 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-40" />
     <option name="y" value="30" />
     <option name="width" value="1945" />
@@ -305,7 +312,7 @@
       <updated>1543735366305</updated>
       <workItem from="1543735367445" duration="21564000" />
       <workItem from="1543757606574" duration="2997000" />
-      <workItem from="1543831272816" duration="319000" />
+      <workItem from="1543831272816" duration="577000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1543738998518</created>
@@ -318,10 +325,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24880000" />
+    <option name="totallyTimeSpent" value="25138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18364611" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -581,10 +589,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Observers/Observer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/Server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+        <state relative-caret-position="197">
+          <caret line="127" column="32" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Console/QrCode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>
