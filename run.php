@@ -95,7 +95,9 @@ $pause = false;
 $messageHandler->setHandler(function ($message) {
     global $emotion_mode, $conn, $pause;
 
+    //过滤群消息
     if ($message['fromType'] == 'Group') return;
+    //文件传输助手控制开关
     if ($message['from']['UserName'] == 'filehelper' && $message['type'] == 'text' && $message['message'] == '#暂停'){
         switch ($pause){
             case true:
@@ -112,8 +114,10 @@ $messageHandler->setHandler(function ($message) {
     }
     if ($pause == true) return;
 
+    //接受文本指令
     if ($message['type'] == 'text'){
         switch ($message['message']){
+
             case '#保存表情':
                 if (!isset($emotion_mode[$message['from']['UserName']])){
                     $emotion_mode[$message['from']['UserName']] = "save";
@@ -122,6 +126,7 @@ $messageHandler->setHandler(function ($message) {
                     Text::send($message['from']['UserName'], '@维尼在线服务:请先退出其他模式');
                 }
                 break;
+
             case '#搜索表情':
                 if (!isset($emotion_mode[$message['from']['UserName']])){
                     $emotion_mode[$message['from']['UserName']] = "search";
@@ -130,11 +135,13 @@ $messageHandler->setHandler(function ($message) {
                     Text::send($message['from']['UserName'], '@维尼在线服务:请先退出其他模式');
                 }
                 break;
+
             case '#结束':
                 unset($emotion_mode[$message['from']['UserName']]);
                 Text::send($message['from']['UserName'], '@维尼在线服务:结束所有模式');
                 break;
             default:
+                //发出指令后的二次调用关键词
                 if (isset($emotion_mode[$message['from']['UserName']])){
                     switch ($emotion_mode[$message['from']['UserName']]){
                         case 'search':
@@ -184,6 +191,5 @@ $messageHandler->setHandler(function ($message) {
         }
     }
 });
-
 $vb->server->serve();
 ?>

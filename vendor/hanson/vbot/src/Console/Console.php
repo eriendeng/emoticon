@@ -55,7 +55,7 @@ class Console
             if ($log && in_array($level, array_keys(Logger::getLevels()))) {
                 $this->vbot->log->log($level, $str);
             }
-            echo '['.Carbon::now()->toDateTimeString().']'."[{$level}] ".$str.PHP_EOL;
+            echo '['.Carbon::now(Asia)->toDateTimeString().']'."[{$level}] ".$str.PHP_EOL;
         }
     }
 
